@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-font-family: sans-serif;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Main.LoginController">
+   <children>
+      <TextField fx:id="usernameTxt" layoutX="206.0" layoutY="187.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label fx:id="userNameLbl" layoutX="206.0" layoutY="170.0" text="username" />
+      <Label fx:id="passwordLbl" layoutX="206.0" layoutY="222.0" text="password" />
+      <Label fx:id="locationLbl" alignment="CENTER" layoutX="206.0" layoutY="316.0" prefHeight="16.0" prefWidth="175.0" text="Location">
+         <font>
+            <Font name="SansSerif Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="userLocationLbl" alignment="CENTER" contentDisplay="RIGHT" layoutX="208.0" layoutY="332.0" prefHeight="16.0" prefWidth="175.0" text="Label" />
+      <PasswordField fx:id="passwordTxt" layoutX="206.0" layoutY="238.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label fx:id="header" contentDisplay="CENTER" layoutX="157.0" layoutY="64.0" prefHeight="46.0" prefWidth="274.0" style="-fx-font-size: 25px; -fx-alignment: center;" text="Scheduling System" textAlignment="CENTER">
+         <font>
+            <Font name="SansSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButtonLbl" layoutX="208.0" layoutY="278.0" mnemonicParsing="false" onAction="#onActionLogin" text="Login" />
+      <Label fx:id="liveClock" alignment="CENTER" layoutX="241.0" layoutY="28.0" prefHeight="16.0" prefWidth="120.0" text="Label" />
+   </children>
+</AnchorPane>

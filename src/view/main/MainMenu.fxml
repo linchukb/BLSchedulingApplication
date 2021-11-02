@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-font-family: sans-serif;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Main.MainMenuController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onActionLogout" prefHeight="30.0" text="Logout">
+               <VBox.margin>
+                  <Insets left="500.0" />
+               </VBox.margin>
+            </Button>
+            <Label alignment="CENTER" prefHeight="114.0" prefWidth="600.0" text="Main Menu">
+               <font>
+                  <Font name="SansSerif Bold" size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Button contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#onActionCustomerRecords" style="-fx-background-radius: 10; -fx-border-radius: 10;" text="Customer Records">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../files/CustomerRecords.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="BOTTOM" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionScheduling" style="-fx-border-radius: 10; -fx-background-radius: 10;" text="Scheduling">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../files/Scheduling.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="BOTTOM" layoutX="65.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionReports" style="-fx-border-radius: 10; -fx-background-radius: 10;" text="Reports">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../files/Reports.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

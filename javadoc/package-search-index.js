@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"BLSchedulingApplication"},{"l":"controller.Customers"},{"l":"controller.Main"},{"l":"controller.Reports"},{"l":"controller.Scheduling"},{"l":"model"},{"l":"utils"}]
